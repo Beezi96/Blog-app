@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@700&display=swap" rel="stylesheet">
+    <title>Blog App</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-left">
+                    <h2 class="post-title">Новый пост</h2>
+                    <div class="box">
+                        <input 
+                            class="js-input-title input-title" type="text" placeholder="Заголовок">
+                        
+                        <div class="js-limitation-title limitation-message"> У вас есть 100 символов</div>
+                        <textarea 
+                            class="js-input-post-text input-post-text" name="text"
+                            placeholder="Напиши пост"></textarea>
+
+                        <div class="js-limitation-post limitation-message">У вас есть 200 символов</div>
+                        <button class="js-btn btn">Опубликовать</button>
+
+                    </div>
+                </div>
+                    
+                <div class="col-right">
+                    <h2 class="post-title">Лента</h2>
+                    <div class="js-posts posts">
+                        Лента пуста...
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
